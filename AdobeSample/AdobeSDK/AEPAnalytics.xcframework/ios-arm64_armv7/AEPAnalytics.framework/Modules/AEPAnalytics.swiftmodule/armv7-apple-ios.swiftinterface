@@ -1,0 +1,30 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-module-flags: -target armv7-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AEPAnalytics
+@_exported import AEPAnalytics
+import AEPCore
+import AEPServices
+import Foundation
+import Swift
+import UIKit
+@objc(AEPMobileAnalytics) public class Analytics : ObjectiveC.NSObject, AEPCore.Extension {
+  @objc final public let runtime: AEPCore.ExtensionRuntime
+  @objc final public let name: Swift.String
+  @objc final public let friendlyName: Swift.String
+  @objc public static let extensionVersion: Swift.String
+  @objc final public let metadata: [Swift.String : Swift.String]?
+  @objc required public init?(runtime: AEPCore.ExtensionRuntime)
+  @objc public func onRegistered()
+  @objc public func onUnregistered()
+  @objc public func readyForEvent(_ event: AEPCore.Event) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc extension Analytics {
+  @objc(clearQueue) public static func clearQueue()
+  @objc(getQueueSize:) public static func getQueueSize(completion: @escaping (Swift.Int, Swift.Error?) -> Swift.Void)
+  @objc(sendQueuedHits) public static func sendQueuedHits()
+  @objc(getTrackingIdentifier:) public static func getTrackingIdentifier(completion: @escaping (Swift.String?, Swift.Error?) -> Swift.Void)
+  @objc(getVisitorIdentifier:) public static func getVisitorIdentifier(completion: @escaping (Swift.String?, Swift.Error?) -> Swift.Void)
+  @objc(setVisitorIdentifier:) public static func setVisitorIdentifier(visitorIdentifier: Swift.String)
+}

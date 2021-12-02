@@ -21,6 +21,8 @@
 		A02ED8472758EB6900D2E47E /* AEPServices.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02ED83F2758EB6900D2E47E /* AEPServices.xcframework */; };
 		A02ED8482758EB6900D2E47E /* AEPAssurance.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02ED8402758EB6900D2E47E /* AEPAssurance.xcframework */; };
 		A02ED8492758EB6900D2E47E /* AEPIdentity.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02ED8412758EB6900D2E47E /* AEPIdentity.xcframework */; };
+		A02ED84B2758F95100D2E47E /* AEPUserProfile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02ED84A2758F95100D2E47E /* AEPUserProfile.xcframework */; };
+		A02ED84D2758FB9C00D2E47E /* AEPAnalytics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02ED84C2758FB9C00D2E47E /* AEPAnalytics.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		A02ED83F2758EB6900D2E47E /* AEPServices.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AEPServices.xcframework; sourceTree = "<group>"; };
 		A02ED8402758EB6900D2E47E /* AEPAssurance.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AEPAssurance.xcframework; sourceTree = "<group>"; };
 		A02ED8412758EB6900D2E47E /* AEPIdentity.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AEPIdentity.xcframework; sourceTree = "<group>"; };
+		A02ED84A2758F95100D2E47E /* AEPUserProfile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AEPUserProfile.xcframework; sourceTree = "<group>"; };
+		A02ED84C2758FB9C00D2E47E /* AEPAnalytics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AEPAnalytics.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A02ED8472758EB6900D2E47E /* AEPServices.xcframework in Frameworks */,
+				A02ED84B2758F95100D2E47E /* AEPUserProfile.xcframework in Frameworks */,
 				A02ED8482758EB6900D2E47E /* AEPAssurance.xcframework in Frameworks */,
 				A02ED8452758EB6900D2E47E /* AEPSignal.xcframework in Frameworks */,
 				A02ED8432758EB6900D2E47E /* AEPMobileServices.xcframework in Frameworks */,
@@ -55,6 +60,7 @@
 				A02ED8422758EB6900D2E47E /* AEPCore.xcframework in Frameworks */,
 				A02ED8492758EB6900D2E47E /* AEPIdentity.xcframework in Frameworks */,
 				A02ED8462758EB6900D2E47E /* AEPLifecycle.xcframework in Frameworks */,
+				A02ED84D2758FB9C00D2E47E /* AEPAnalytics.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +101,8 @@
 		A02ED8392758EB6900D2E47E /* AdobeSDK */ = {
 			isa = PBXGroup;
 			children = (
+				A02ED84C2758FB9C00D2E47E /* AEPAnalytics.xcframework */,
+				A02ED84A2758F95100D2E47E /* AEPUserProfile.xcframework */,
 				A02ED83A2758EB6900D2E47E /* AEPCore.xcframework */,
 				A02ED83B2758EB6900D2E47E /* AEPMobileServices.xcframework */,
 				A02ED83C2758EB6900D2E47E /* AEPRulesEngine.xcframework */,
